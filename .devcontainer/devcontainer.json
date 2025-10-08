@@ -1,0 +1,41 @@
+{
+  "name": "JacLang Codespace",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+  "postCreateCommand": "python3 -m venv venv && source venv/bin/activate && pip install --upgrade pip && pip install jaclang byLLM black flake8",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // ✅ Auto-activate venv
+        "terminal.integrated.env.linux": {
+          "VIRTUAL_ENV": "${workspaceFolder}/venv",
+          "PATH": "${workspaceFolder}/venv/bin:${env:PATH}"
+        },
+        "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+
+        // ✅ Auto-format & lint
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter"
+        },
+        "[jac]": {
+          "editor.defaultFormatter": "jac-lang.jac"
+        },
+        "python.linting.enabled": true,
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black"
+      },
+      "extensions": [
+        "jac-lang.jac",          
+        "ms-python.python",      
+        "ms-toolsai.jupyter",    
+        "ms-python.black-formatter",
+        "ms-python.flake8"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
