@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Jac Script",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/venv/bin/jac",
+      "args": ["run", "${file}"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Build Jac Script",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/venv/bin/jac",
+      "args": ["build", "${file}"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
