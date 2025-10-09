@@ -1,6 +1,6 @@
 # 🧩 JacLang + Python Development Setup in GitHub Codespaces
 
-This repository provides a ready-to-use **GitHub Codespace environment**
+This repository provides a ready-to-use **GitHub Codespace environment(https://sturdy-rotary-phone-vqr9j594qqgfrpr.github.dev/)**
 for developing with **JacLang** and **Python** --- including virtual
 environment setup, automatic formatting, linting, build/run tasks, and
 debug configuration.
@@ -47,7 +47,7 @@ debug configuration.
 
 ## 🪄 Credits
 
--   **JacLang:** <https://github.com/Jaseci-Labs/jaclang>\
+-   **JacLang:** <https://github.com/Jaseci-Labs/jaclang>
 
 ------------------------------------------------------------------------
 
@@ -55,8 +55,8 @@ debug configuration.
 
 You now have a fully configured **JacLang + Python development
 environment** in GitHub Codespaces: - Auto-activated virtual
-environment\
-- JacLang build/run tasks\
-- Debugging support\
-- Auto-formatting and linting\
+environment
+- JacLang build/run tasks
+- Debugging support
+- Auto-formatting and linting
 - Works seamlessly in the cloud ☁️
